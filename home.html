@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>GCONVERT</title>
+    <link rel="icon" href="./logo.png">
+    <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js" defer></script>
+    <script type="module" src="./jquery-3.6.0.min.js" defer></script>
+    <script type="module" src="./index.js" defer></script>
+  </head>
+  <body class="bg-dark">
+    <header class="shadow p-3 d-flex align-items-center justify-content-between position-sticky top-0 bg-dark" style="z-index: 100;">
+      <aside class="d-flex align-items-center justify-content-center gap-2">
+        <img src="./logo.png" alt="icon" width="50" height="50" loading="lazy" class="shadow rounded-circle">
+        <h3 class="text-warning mb-0">GCONVERT</h3>
+      </aside>
+      <aside>
+        <button type="button" class="btn btn-dark border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <img src="./more.svg" alt="icon" width="10" height="30">
+        </button>
+        
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <aside class="d-flex align-items-center justify-content-center gap-2">
+              <img src="./logo.png" alt="icon" width="50" height="50" loading="lazy" class="shadow rounded-circle">
+              <h3 class="text-warning mb-0" class="offcanvas-title" id="offcanvasExampleLabel">GCONVERT</h3>
+            </aside>
+            <button type="button" class="btn-close bg-warning" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <h4 class="text-warning">About</h4>
+            <p class="text-warning mb-1" style="text-indent: .3in;">I developed this simple mobile application for Android users and no internet needed. File is also safe.</p>
+            <p class="text-warning mb-1" style="text-indent: .3in;">It helps you convert your GPA from a decimal to a whole number and vice versa. This is for educational purposes only.</p>
+            <p class="text-warning" style="text-indent: .3in;">This is for educational purposes only.</p>
+            <h4 class="text-warning">Developed by</h4>
+            <p class="text-warning d-flex align-items-center justify-content-start gap-1"><img src="./facebook.svg" alt="icon" width="25" height="25" loading="lazy" class="rounded-circle"><span>John Michael Lacurom</span></p>
+            <p class="text-light mb-0 opacity-50">Version 1.0</p>
+            <p class="mb-0 text-light opacity-50">GCONVERT &copy; 2024. All Rights Reserved.</p>
+          </div>
+        </div>
+      </aside>
+    </header>
+    <section class="p-3 d-flex align-items-start justify-content-start flex-column gap-5">
+      <div class="w-100">
+        <div id="liveAlertPlaceholder"></div>
+        
+        <label class="text-warning fs-3" id="firstLabel">Decimal number</label>
+        <div class="d-flex align-items-center justify-content-center gap-2 flex-nowrap">
+          <input type="number" class="form-control bg-dark text-warning fs-1 border border-warning" placeholder="ex) 1.0" id="firstInput">
+          <button type="button" class="btn btn-warning fs-3" id="convertButton">Convert</button>
+        </div>
+      </div>
+      <div class="w-100 text-center">
+        <button type="button" class="btn btn-dark shadow-sm" id="swapButton"><img src="./swap.svg" alt="icon" width="40" height="40" loading="lazy"></button>
+      </div>
+      <div class="w-100">
+        <label class="text-warning fs-3" id="secondLabel">Whole number</label>
+        <input type="number" class="form-control bg-dark text-warning border-0 fs-1" placeholder="ex) 95" disabled id="secondInput">
+      </div>
+    </section>
+  </body>
+</html>

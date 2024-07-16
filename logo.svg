@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <filter id="G" x="109" y="173" width="830.5" height="693.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="15" dy="15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#fb0"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="G-2" x="109" y="173" width="830.5" height="693.5" filterUnits="userSpaceOnUse">
+      <feOffset dx="15" dy="15" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur-2"/>
+      <feFlood flood-color="#fb0" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="logo" transform="translate(-25 -481)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(25 481)" stroke="#000" stroke-width="1">
+      <rect width="1024" height="1024" rx="500" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1023" height="1023" rx="499.5" fill="none"/>
+    </g>
+    <g id="Group_1" data-name="Group 1">
+      <g data-type="innerShadowGroup">
+        <g transform="matrix(1, 0, 0, 1, 25, 481)" filter="url(#G)">
+          <text id="G-3" data-name="G" transform="translate(109 703)" fill="#fff" font-size="550" font-family="LatinWide, Wide Latin"><tspan x="0" y="0">G</tspan></text>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 25, 481)" filter="url(#G-2)">
+          <text id="G-4" data-name="G" transform="translate(109 703)" fill="#fff" font-size="550" font-family="LatinWide, Wide Latin"><tspan x="0" y="0">G</tspan></text>
+        </g>
+      </g>
+      <path id="Icon_material-grade" data-name="Icon material-grade" d="M119.126,180.324l71.766,43.315L171.847,142l63.4-54.928-83.494-7.084L119.126,3,86.494,79.991,3,87.075,66.4,142,47.36,223.639Z" transform="translate(696.391 607)" fill="#fb0"/>
+      <path id="Icon_material-grade-2" data-name="Icon material-grade" d="M72.737,109.488l43.1,26.012L104.4,86.475l38.076-32.986L92.333,49.236,72.737,3l-19.6,46.236L3,53.489,41.076,86.475,29.639,135.5Z" transform="translate(515 608.479)" fill="#fb0"/>
+      <path id="Icon_material-grade-3" data-name="Icon material-grade" d="M47.832,71.458,75.538,88.18,68.185,56.664,92.664,35.458,60.43,32.723,47.832,3l-12.6,29.723L3,35.458,27.478,56.664,20.126,88.18Z" transform="translate(346.293 651)" fill="#fb0"/>
+      <path id="Icon_material-grade-4" data-name="Icon material-grade" d="M32.176,47.551l18.03,10.882-4.785-20.51,15.93-13.8-20.977-1.78L32.176,3l-8.2,19.343L3,24.123l15.93,13.8-4.785,20.51Z" transform="translate(208.898 736.18)" fill="#fb0"/>
+      <text id="CONVERT" transform="translate(219 1343)" fill="#fb0" font-size="143" font-family="TwCenMT-Bold, Tw Cen MT" font-weight="700"><tspan x="0" y="0">CONVERT</tspan></text>
+      <path id="Icon_material-grade-5" data-name="Icon material-grade" d="M20.205,29.272,30.838,35.69l-2.822-12.1,9.394-8.138L25.04,14.407,20.205,3,15.371,14.407,3,15.457l9.394,8.138L9.572,35.69Z" transform="translate(124 835.639)" fill="#fb0"/>
+    </g>
+  </g>
+</svg>
